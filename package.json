@@ -1,0 +1,19 @@
+{
+  "name": "ui_testing_playground_suite",
+  "version": "0.1.0",
+  "description": "automation suite against the ui testing playground",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Avienneau/ui_testing_playground_suite.git"
+  },
+  "author": "aaron vienneau-herring",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Avienneau/ui_testing_playground_suite/issues"
+  },
+  "homepage": "https://github.com/Avienneau/ui_testing_playground_suite#readme"
+}
