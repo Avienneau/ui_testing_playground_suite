@@ -7,7 +7,8 @@
     "cy:open": "cypress open",
     "prepare": "husky",
     "std:commit": "cz",
-    "lint:fix": "eslint --fix '**/*.{js,jsx}'"
+    "lint:fix": "eslint --fix 'cypress/e2e/'",
+    "format:write": "prettier --write 'cypress/e2e/'"
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,8 @@
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.7.0",
     "eslint-plugin-cypress": "^3.3.0",
-    "husky": "^9.1.1"
+    "husky": "^9.1.1",
+    "prettier": "^3.3.3"
   },
   "config": {
     "commitizen": {
