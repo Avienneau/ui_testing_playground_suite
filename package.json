@@ -27,7 +27,14 @@
     "eslint": "^9.7.0",
     "eslint-plugin-cypress": "^3.3.0",
     "husky": "^9.1.1",
+    "lint-staged": "^15.2.7",
     "prettier": "^3.3.3"
+  },
+  "lint-staged": {
+    "**/*.{js, jsx}": [
+      "npm run lint:fix",
+      "npm run format:write"
+    ]
   },
   "config": {
     "commitizen": {
