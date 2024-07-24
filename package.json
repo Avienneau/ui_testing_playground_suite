@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Avienneau/ui_testing_playground_suite/issues"
   },
-  "homepage": "https://github.com/Avienneau/ui_testing_playground_suite#readme"
+  "homepage": "https://github.com/Avienneau/ui_testing_playground_suite#readme",
+  "devDependencies": {
+    "cypress": "^13.13.1"
+  }
 }
