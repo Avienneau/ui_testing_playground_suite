@@ -3,7 +3,6 @@ name: run on pull request
 on:
   pull_request:
     branches: [main]
-    type: [synchronize]
 
 jobs:
   run_project:
