@@ -1,0 +1,31 @@
+name: run on pull request
+
+on:
+  pull_request:
+    branches: [master]
+    type: [synchronize]
+
+jobs:
+  run_project:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: setup node environment
+        uses: actions/setup-node@v4.0.3
+        with:
+          node-version: 20
+      -
+        name: checkout repository
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+      -
+        name: install dependencies
+        run: npm ci
+      -
+        name: run project
+        run: npm run cy:run
+
+
+          
+
