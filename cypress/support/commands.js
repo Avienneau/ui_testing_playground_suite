@@ -30,3 +30,26 @@ Cypress.Commands.add(
       });
   },
 );
+
+/**
+ * contents_search returns a cypress promise that, when invoked,
+ * 1. wraps the previous subject
+ * 2. inspects the subject's contents for a selector
+ * 3. wraps and returns the selected element
+ *
+ * Child command to be called on an element with contents.
+ * Specifically useful for iframes, as cy.get() does not
+ * detect nested iframe contents.
+ **/
+Cypress.Commands.add(
+  "contents_search",
+  {
+    prevSubject: true,
+  },
+  (subject, selector) => {
+    return cy.wrap(subject).then(($parent) => {
+      const result = $parent.contents().find(selector);
+      return cy.wrap(result);
+    });
+  },
+);
