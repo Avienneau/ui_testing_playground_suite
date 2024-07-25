@@ -2,7 +2,7 @@ name: run on pull request
 
 on:
   pull_request:
-    branches: [master]
+    branches: [main]
     type: [synchronize]
 
 jobs:
