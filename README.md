@@ -1,4 +1,11 @@
 # UI Testing Playground Suite
+The UI Testing Playground suite is an automated cypress acceptance suite written to a production-level standard.
+## Features
+- production-quality tests written to run repeatedly per execution to weed out flakiness within the devleopment process
+- centralized project management through `npm` scripts, such as execution, linting, and formatting
+- pristine git commit history, utilizing conventional commits specifications
+- integrated with husky pre-commit to ensure uniform development and high-quality commits
+
 
 ## Installation
 > [!NOTE]  
