@@ -5,6 +5,8 @@
  * without the prior written permission of Aaron Daniel Vienneau-Herring.
  **/
 
+require("cypress-downloadfile/lib/downloadFileCommand");
+
 /**
  * match_and_capture_textreturns a cypress promise that, when invoked,
  * 1. finds a selector
@@ -65,12 +67,20 @@ Cypress.Commands.add(
 Cypress.Commands.add(
   "alias_pseudo_element_property_value",
   (selector, pseudo_element, property_value) => {
-    cy.get(selector).within(($el) => {
+    return cy.get(selector).within(($el) => {
       cy.window().then((win) => {
         const style = win.getComputedStyle($el[0], pseudo_element);
         const value = style.getPropertyValue(property_value);
         cy.wrap(value).as("pseudo_element_value");
       });
     });
+  },
+);
+
+Cypress.Commands.add(
+  "do_and_assert",
+  { prevSubject: true },
+  (subject, action, value, comparison, func) => {
+    cy.wrap(subject)[action](value).invoke(func).should(comparison, value);
   },
 );

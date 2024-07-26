@@ -25,8 +25,6 @@ Cypress._.times(5, () => {
       match_and_capture_confirmation_code().then((code) => {
         const code_array = code.split("-"); // split to array
         for (let input = 0; input < code_array.length; input++) {
-          // iterate over array
-          /* for each number in the code, find the corresponding input element and type it in */
           cy.get(".code-container input").eq(input).type(code_array[input]);
         }
         cy.contains("Success").should("be.visible");
