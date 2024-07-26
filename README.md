@@ -1,4 +1,4 @@
-# UI Testing Playground Suite
+# UI Testing Suite
 The UI Testing Playground suite is an automated cypress acceptance suite written to a production-level standard.
 ## Features
 - production-quality tests written to run repeatedly per execution to weed out flakiness within the devleopment process
@@ -14,7 +14,7 @@ The UI Testing Playground suite is an automated cypress acceptance suite written
 
 clone the git repository
 ```
-git clone git@github.com:Avienneau/ui_testing_playground_suite.git
+git clone git@github.com:Avienneau/ui_testing_suite.git
 ```
 install the required version of node
 ```
