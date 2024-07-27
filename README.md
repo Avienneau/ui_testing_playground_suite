@@ -1,5 +1,5 @@
 # UI Testing Suite
-The UI Testing Playground suite is an automated cypress acceptance suite written to a production-level standard.
+The UI Testing suite is an automated cypress acceptance suite written to a production-level standard.
 ## Features
 - production-quality tests written to run repeatedly per execution to weed out flakiness within the devleopment process
 - centralized project management through `npm` scripts, such as execution, linting, and formatting
