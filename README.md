@@ -14,7 +14,7 @@ The UI Testing suite is an automated cypress acceptance suite written to a produ
 
 clone the git repository
 ```
-git clone git@github.com:Avienneau/ui_testing_suite.git
+git clone https://github.com/Avienneau/ui_testing_suite.git
 ```
 install the required version of node
 ```
